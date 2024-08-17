@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="center">
+        <div class="header">
+            <h1>Rock-Paper-Scissor</h1>
+        </div>
+        <div class="result-display"></div>
+        <div class="game-icon">
+            <button onclick="playerMove('Rock');
+
+            
+
+            " class="button">
+                <label for="check">
+                    <img src="images/Rock.png" alt="Rock" class="icon">
+                </label>
+            </button>
+
+            <button onclick="playerMove('Paper');" class="button">
+                <label for="check">
+                    <img src="images/Paper.png" alt="Paper" class="icon">
+                </label>
+            </button>
+
+            <button onclick="playerMove('Scissor');" class="button">
+                <label for="check">
+                    <img src="images/Scissor.png" alt="Scissor" class="icon">
+                </label>
+            </button>
+        </div>
+
+        
+    </div>
+    <button onclick="
+
+    score.win = 0;
+    score.lose = 0;
+    score.tie = 0;
+    localStorage.removeItem('score');
+    updateScore();
+    
+    
+    " class="reset-btn">Reset
+    </button>
+    <input type="checkbox" id="check" class="check">
+
+    <div class="page">
+        <div class="close ">
+            <label for="check">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+        </div>
+        <div class="display">
+            <p class="js-result"></p>
+            <div class="moves">
+                <p class="js-moves1"></p>
+                <p class="js-moves2"></p>
+            </div>
+            <p class="js-score"></p> 
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

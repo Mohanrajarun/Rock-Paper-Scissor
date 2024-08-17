@@ -1,0 +1,159 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #1e272e;
+    color: white;
+
+}
+
+.button{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    border: 5px solid white;
+    
+    margin: 1rem;
+    padding: 1rem;
+
+}
+
+.button:hover{
+    background-color: #485460;
+}
+
+.icon{
+    height: 140px;
+    width: 140px;
+   filter: invert(100%);
+   object-fit: cover;
+}
+.icon:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+    transition:all 0.1s ease;
+    cursor: pointer;
+    
+}
+.header{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.game-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+body{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page{
+    display: none;
+}
+.page{
+    position: absolute;
+    height: 45%;
+    width: 75%;
+    top: 40%;
+    left: 50%;
+    max-width: 600px;
+    transform: translate(-50%,-50%);
+    background-color: #808e9b;
+    /* display: none; */
+    
+}
+
+
+/* .display{
+    position: relative;
+}
+.js-result{
+    position: absolute;
+    background-color: violet;
+    
+    
+    
+} */
+
+.result-display{
+    text-align: center;
+    font-size: 3rem;
+    background-color: green;
+    transition: background-color 0.2s ease;
+}
+.reset-btn{
+    padding: 8px 15px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    position: absolute;
+    right: 4rem;
+    bottom: 8rem;
+}
+.moves{
+    margin-top:1rem ;
+    display: flex;
+}
+.close svg{
+    position: absolute;
+    right: 1px;
+    cursor: pointer;
+    transition: all 0.1s ;
+}
+.close svg:hover{
+    fill: rgb(212, 206, 206);
+}
+.js-moves1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+
+
+}
+.js-moves2{
+    width: 50%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    
+
+}
+
+.move-icon{
+    height: 80px;
+}
+
+.js-score{
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+
+}
+.check{
+    display: none;
+}
+#check:checked~ .page{
+    display: inline;
+}
