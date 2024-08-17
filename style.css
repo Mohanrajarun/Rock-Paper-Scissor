@@ -190,3 +190,24 @@ body{
     font-weight: 600;
     color:#1e272e ;
 }
+@media screen and (max-width:477px) {
+    .icon{
+        height: 60px;
+        width: 60px;
+       filter: invert(100%);
+       object-fit: cover;
+    }
+    .button{
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+        border: 5px solid white;
+        
+        margin: 1rem;
+        padding: 1rem;
+    
+    }
+    
+}
