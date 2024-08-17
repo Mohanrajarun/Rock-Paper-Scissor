@@ -75,7 +75,7 @@ function playerMove(move){
     document.querySelector('.js-moves1').innerHTML = `you 
 
     
-                <img src="/rock-paper-scissors.html/images/${move}.png" alt="${move}" class="move-icon">
+                <img src="images/${move}.png" alt="${move}" class="move-icon">
     
      
     `;
@@ -83,7 +83,7 @@ function playerMove(move){
     computer
     
 
-    <img src="/rock-paper-scissors.html/images/${computerMove}.png" alt="${move}" class="move-icon">
+    <img src="images/${computerMove}.png" alt="${move}" class="move-icon">
      `;
     
     document.querySelector('.result-display').innerHTML = `${result}`;
