@@ -87,7 +87,18 @@ body{
     
     
 } */
+.you{
+    color: rgb(3, 3, 44);
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #d2dae2;
+    padding: 0.5rem;
+    width: 8rem;
+    text-align: center;
+    border-radius: 15px;
 
+}
 .result-display{
     text-align: center;
     font-size: 3rem;
@@ -103,8 +114,15 @@ body{
     bottom: 8rem;
 }
 .moves{
-    margin-top:1rem ;
+    
+    margin-top:3rem ;
     display: flex;
+    /* grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 15px;
+    align-items: center; */
+    
+
 }
 .close svg{
     position: absolute;
@@ -115,12 +133,17 @@ body{
 .close svg:hover{
     fill: rgb(212, 206, 206);
 }
+
 .js-moves1{
     width: 50%;
+    height: 120px;
+
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
+    gap: 2rem;
+    /* background-color: red; */
     
 
 
@@ -128,14 +151,20 @@ body{
 .js-moves2{
     width: 50%;
     height: 120px;
+    /* background-color: red; */
+
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
+    gap: 2rem;
 
     
 
 }
+/* .images-box{
+    padding-top: 2rem;
+} */
 
 .move-icon{
     height: 80px;
@@ -156,4 +185,8 @@ body{
 }
 #check:checked~ .page{
     display: inline;
+}
+.js-score{
+    font-weight: 600;
+    color:#1e272e ;
 }

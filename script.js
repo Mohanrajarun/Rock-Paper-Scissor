@@ -72,18 +72,18 @@ function playerMove(move){
     localStorage.setItem('score',JSON.stringify(score));
 
     // document.querySelector('.js-result').innerHTML = `${result}`;
-    document.querySelector('.js-moves1').innerHTML = `you 
+    document.querySelector('.js-moves1').innerHTML = `  <div class="you">You </div>
 
-    
+            <div class="images-box">
                 <img src="images/${move}.png" alt="${move}" class="move-icon">
-    
+            </div>
      
     `;
-    document.querySelector('.js-moves2').innerHTML = `
-    computer
+    document.querySelector('.js-moves2').innerHTML = ` <div class="you">Computer</div>
     
-
-    <img src="images/${computerMove}.png" alt="${computerMove}" class="move-icon">
+            <div class="images-box">
+                <img src="images/${computerMove}.png" alt="${computerMove}" class="move-icon">
+            </div>
      `;
     
     document.querySelector('.result-display').innerHTML = `${result}`;
@@ -101,7 +101,7 @@ function playerMove(move){
 }
 function updateScore(){
 
-    document.querySelector('.js-score').innerHTML = `Wins: ${score.win}, losses: ${score.lose}, tie: ${score.tie}`;
+    document.querySelector('.js-score').innerHTML = `Wins: ${score.win}&nbsp; &nbsp;        losses: ${score.lose}  &nbsp;   &nbsp;      tie: ${score.tie}`;
 
 
     }
