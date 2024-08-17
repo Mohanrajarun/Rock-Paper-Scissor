@@ -83,7 +83,7 @@ function playerMove(move){
     computer
     
 
-    <img src="images/${computerMove}.png" alt="${move}" class="move-icon">
+    <img src="images/${computerMove}.png" alt="${computerMove}" class="move-icon">
      `;
     
     document.querySelector('.result-display').innerHTML = `${result}`;
