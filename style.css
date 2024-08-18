@@ -12,6 +12,16 @@ body{
     color: white;
 
 }
+/* Apply to the entire body to prevent selection on the whole page */
+body {
+    -webkit-user-select: none;  /* Safari */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* Internet Explorer/Edge */
+    user-select: none;          /* Standard syntax */
+}
+
+
+
 
 .button{
     height: 200px;
