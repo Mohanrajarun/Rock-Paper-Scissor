@@ -167,7 +167,7 @@ document.querySelector('.reset-btn ').addEventListener('click', function() {
 
     setTimeout(() => {
         resetBtn.style.backgroundColor = 'white'; // Reset to the original background color
-        resetBtn.style.color = 'darkblue'; // Reset to the original text color
+        resetBtn.style.color = 'black'; // Reset to the original text color
     },200);
 });
 function updateScore(){

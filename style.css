@@ -235,6 +235,20 @@ body{
     display: inline;
 }
 .autoplay{
+    /* padding: 8px 15px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    position: fixed;
+    left: 3rem;
+    bottom: 6.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: serif;
+    border: none;
+
+    -webkit-tap-highlight-color: transparent;
+    outline: none; */
+
     padding: 8px 15px;
     font-size: 1.5rem;
     border-radius: 30px;
@@ -261,14 +275,14 @@ body{
 
 @media screen and (max-width:477px) {
     .button{
-        height: 100px;
-        width: 100px;
+        height: 120px;
+        width: 120px;
         
     
     }
     .icon{
-        height: 60px;
-        width: 60px;
+        height: 70px;
+        width: 70px;
        filter: invert(100%);
        object-fit: cover;
     }
@@ -276,16 +290,24 @@ body{
         padding: 8px 15px;
         font-size: 1.5rem;
         border-radius: 30px;
+        width: 6rem;
+        max-width: 150px;
         position: fixed;
         right: 1rem;
         bottom: 1rem;
     }
+    .autoplay{
+        position: fixed;
+
+        left: 1rem;
+        bottom: 1rem;
+    }
     .page{
         position: absolute;
-        height: 55%;
+        height: 50%;
         width: 78%;
         max-width:400px ;
-        top: 40%;
+        top: 42%;
         left: 50%;
         max-width: 600px;
         transform: translate(-50%,-50%);
