@@ -30,7 +30,7 @@ img {
 }
 
 
-button, .button-icon {
+button, .reset-btn {
     -webkit-user-select: none;  /* Safari */
     -moz-user-select: none;     /* Firefox */
     -ms-user-select: none;      /* Internet Explorer/Edge */
@@ -39,7 +39,7 @@ button, .button-icon {
     outline: none;              /* Remove blue outline on focus */
 }
 
-button:focus, .button-icon:focus {
+button:focus, .reset-btn:focus {
     outline: none;              /* Ensure no outline on focus */
 }
 
@@ -253,7 +253,7 @@ body{
     .page{
         position: absolute;
         height: 55%;
-        width: 75%;
+        width: 78%;
         max-width:400px ;
         top: 40%;
         left: 50%;
