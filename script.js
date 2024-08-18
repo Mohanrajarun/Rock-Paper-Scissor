@@ -7,14 +7,63 @@ let score = JSON.parse(localStorage.getItem('score')) || {
 
 updateScore();
 
+let isAutoPlaying = false;
+let intervalId;
+
+function auto(){
+    if(!isAutoPlaying){
+        intervalId = setInterval(function(){
+        
+            const move = chooseRandomMove();
+        
+            playerMove(move);
+        },500);
+        document.querySelector('.autoplay').innerHTML= 'Stop Autoplay';
+        isAutoPlaying = true;
+    
+    }
+    else{
+        clearInterval(intervalId);
+        document.querySelector('.autoplay').innerHTML= 'Autoplay';
+        isAutoPlaying = false;
+
+    }
+} 
+
+// function stopautoplay(){
+//     document.querySelector('.autoplay').innerHTML= 'Autoplay';
+
+
+// }
+//     if(isAutoPlaying){
+//         autoplay();
+//     }
+//     else{
+//         stopautoplay();
+//     }
+
+
+// function startAutoPlay() {
+//     autoPlayInterval = setInterval(() => {
+//         const moves = ['Rock', 'Paper', 'Scissor'];
+//         const randomMove = chooseRandomMove();
+//         playerMove(randomMove);
+//     }, 1000); 
+//     document.querySelector('.autoplay').innerHTML= 'Stop';
+// }
+
+// function startAutoPlay() {
+//     clearInterval(autoPlayInterval);
+
+// }
 
 function playerMove(move){
     let result = '';
-    chooseRandomMove();
+    const computerMove = chooseRandomMove();
 
 
     if(move === 'Rock'){
-        chooseRandomMove();
+        // chooseRandomMove();
 
         if(computerMove === 'Rock'){
             result = "Tie";
@@ -27,7 +76,7 @@ function playerMove(move){
         }
     }
     else if(move === 'Paper'){
-        chooseRandomMove();
+        // chooseRandomMove();
 
         if(computerMove === 'Rock'){
             result = "Win";
@@ -41,7 +90,7 @@ function playerMove(move){
         
     }
     else if(move === 'Scissor'){
-        chooseRandomMove();
+        // chooseRandomMove();
 
         if(computerMove === 'Rock'){
             result = 'Lose';
@@ -101,11 +150,25 @@ function playerMove(move){
     // document.querySelector('.js-result').innerHTML = `Wins: ${score.win}. Losses: ${score.lose}. Tie: ${score.tie}`;
 //     alert(`your move ${move}.computer move ${computerMove}. ${result}
 // Wins: ${score.win}. Losses: ${score.lose}. Tie: ${score.tie}`);
-
+    // const resetBtn = document.querySelector('.reset-btn');
+    
 }
 
-document.querySelector('.close svg').addEventListener('click', function() {
+    document.querySelector('.close svg').addEventListener('click', function() {
     document.querySelector('.page').style.display = 'none';
+});
+document.querySelector('.reset-btn ').addEventListener('click', function() {
+//     document.querySelector('.reset-btn').style.backgroundColor = 'darkred';
+//     document.querySelector('.reset-btn').style.color = 'white';
+//     document.querySelector('.reset-btn').style.backgroundColor = 'white';
+    const resetBtn = document.querySelector('.reset-btn');
+    resetBtn.style.backgroundColor = 'red';
+    resetBtn.style.color = 'white';
+
+    setTimeout(() => {
+        resetBtn.style.backgroundColor = 'white'; // Reset to the original background color
+        resetBtn.style.color = 'darkblue'; // Reset to the original text color
+    },200);
 });
 function updateScore(){
 
@@ -116,10 +179,12 @@ function updateScore(){
 
 
 
-let computerMove = '';
+
+
+// let computerMove = '';
 
 function chooseRandomMove(){
-
+    let computerMove ='';
     let  randomNumber = Math.random();
     if(randomNumber >=0 && randomNumber <1/3){
         computerMove = 'Rock';
@@ -130,5 +195,5 @@ function chooseRandomMove(){
     else if(randomNumber >=2/3 && randomNumber <1){
         computerMove = 'Scissor';
     }
-    
+    return computerMove;
 }

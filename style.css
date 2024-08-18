@@ -234,6 +234,30 @@ body{
 #check:checked~ .page{
     display: inline;
 }
+.autoplay{
+    padding: 8px 15px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    position: absolute;
+    left: 4rem;
+    bottom: 8rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: serif;
+    border: none;
+
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------------------- */
 
 @media screen and (max-width:477px) {
     .button{
