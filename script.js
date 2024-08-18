@@ -101,7 +101,7 @@ function playerMove(move){
 }
 function updateScore(){
 
-    document.querySelector('.js-score').innerHTML = `Wins: ${score.win}&nbsp; &nbsp;        losses: ${score.lose}  &nbsp;   &nbsp;      tie: ${score.tie}`;
+    document.querySelector('.js-score').innerHTML = `&nbsp;  Wins: ${score.win} &nbsp;        losses: ${score.lose}  &nbsp;         tie: ${score.tie}`;
 
 
     }
