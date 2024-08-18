@@ -86,6 +86,10 @@ function playerMove(move){
             </div>
      `;
     
+
+     document.querySelector('.page').style.display = 'block';
+     
+    //  document.getElementById('check').checked = true;
     document.querySelector('.result-display').innerHTML = `${result}`;
 
     
@@ -99,6 +103,10 @@ function playerMove(move){
 // Wins: ${score.win}. Losses: ${score.lose}. Tie: ${score.tie}`);
 
 }
+
+document.querySelector('.close svg').addEventListener('click', function() {
+    document.querySelector('.page').style.display = 'none';
+});
 function updateScore(){
 
     document.querySelector('.js-score').innerHTML = `&nbsp;  Wins: ${score.win} &nbsp;        losses: ${score.lose}  &nbsp;         tie: ${score.tie}`;
