@@ -19,7 +19,29 @@ body {
     -ms-user-select: none;      /* Internet Explorer/Edge */
     user-select: none;          /* Standard syntax */
 }
+img {
+    -webkit-user-select: none;  /* Safari */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* Internet Explorer/Edge */
+    user-select: none;          /* Standard syntax */
+    
+    -webkit-user-drag: none;    /* Disable dragging on Safari */
+    /* Disable dragging */
+}
 
+
+button, .button-icon {
+    -webkit-user-select: none;  /* Safari */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* Internet Explorer/Edge */
+    user-select: none;          /* Standard syntax */
+    
+    outline: none;              /* Remove blue outline on focus */
+}
+
+button:focus, .button-icon:focus {
+    outline: none;              /* Ensure no outline on focus */
+}
 
 
 
